@@ -6,5 +6,15 @@ import Contact from "./components/pages/Contact";
 import Projects from "./components/pages/Projects";
 
 function App() {
-  return null
+  return (
+    <Router>
+      <div>
+        <NavTabs />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/projects" component={Projects} />
+        <Route path="/contact" component={Contact} />
+      </div>
+    </Router>
+  );
 }
+export default App;

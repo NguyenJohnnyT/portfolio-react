@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "PokeBattler",
+    "description": "The second group project assigned from UC Berkeley Bootcamp.  Together in a group of three, we utilized a MVC structure and relational databases to build a webapp game that allowed signed-in users to choose a pokemon to battle monsters with.",
+    "tech": "HTML, CSS, JavaScript, express.js, sequelize, handlebars, fetch, rest API, howlerJS, bootstrap",
+    "repoLink": "https://github.com/NguyenJohnnyT/pokebattler",
+    "deployLink": "https://glacial-castle-07768.herokuapp.com/"
+  },
+  {
+    "id": 2,
+    "title": "Weather Dashboard",
+    "description": "A weather dashboard that was my introduction to fetching from an API.  The website features a search history, live updating of the main and secondary cards, and updating the UV index color based on the danger level.",
+    "tech": "HTML, CSS, JavaScript",
+    "repoLink": "https://github.com/NguyenJohnnyT/weatherDashboard",
+    "deployLink": "https://nguyenjohnnyt.github.io/weatherDashboard/"
+  },
+  {
+    "id": 3,
+    "title": "Tech Blog",
+    "description": "Sign-up and create an account to participate in creating and editing new blog posts with a community of tech bloggers. Comment on blog posts and tell the original poster how you feel about their content. View your own blog posts at your dashboard. If you've been inactive for ten minutes, you will be automatically logged out.",
+    "tech": "HTML, CSS, JavaScript, bcrypt, sequelize, express, handlebars, sessions",
+    "repoLink": "https://github.com/NguyenJohnnyT/tech-blog-application",
+    "deployLink": "https://dry-spire-24651.herokuapp.com/"
+  }
+]
