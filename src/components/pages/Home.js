@@ -39,7 +39,7 @@ function Home() {
           <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
             <div className="accordion-body row">
               <div className = "col-4 accord-img-content">
-                <img src="./images/TWHlogo.png" className='img-accord m-2' alt="TWH" />
+                <img src="./images/eeveeBig.png" className='img-accord m-2' alt="TWH" />
               </div>
                 <div className="col-8 accord-content pt-2"><strong>Looking for a particular skillset?  These are the technologies I work with and have great interest in:</strong> 
                   <ul> 

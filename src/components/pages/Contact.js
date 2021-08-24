@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./style.css"
 class Form extends React.Component {
   // Setting the component's initial state
   state = {
@@ -43,9 +43,6 @@ class Form extends React.Component {
   render() {
     return (
       <div>
-        <p>
-          Hello {this.state.firstName} {this.state.lastName}
-        </p>
         <form className="form">
           <input
             value={this.state.firstName}
@@ -54,6 +51,7 @@ class Form extends React.Component {
             type="text"
             placeholder="First Name"
           />
+          <br/>
           <input
             value={this.state.lastName}
             name="lastName"
@@ -61,6 +59,7 @@ class Form extends React.Component {
             type="text"
             placeholder="Last Name"
           />
+          <br/>
           <input
             value={this.state.email}
             name="email"
@@ -68,6 +67,7 @@ class Form extends React.Component {
             type="email"
             placeholder="Email"
           />
+          <br/>
           <input
             value={this.state.message}
             name="message"
@@ -75,6 +75,7 @@ class Form extends React.Component {
             type="message"
             placeholder="Your message"
           />
+          <br/>
           <button onClick={this.handleFormSubmit}>Submit</button>
         </form>
       </div>
