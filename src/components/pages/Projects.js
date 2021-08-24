@@ -1,6 +1,7 @@
 import React from "react";
-import Project from "../ProjectCards/Project"
+import Project from "../ProjectPage/ProjectCards/Project"
 import projects from "../../projects.json"
+import Wrapper from "../ProjectPage/Wrapper/Wrapper"
 import "./style.css"
 
 class Projects extends React.Component {
@@ -16,11 +17,12 @@ class Projects extends React.Component {
   render() {
     console.log(this.state);
     return (
-      <div>
+      <Wrapper>
       {this.state.projects.map(project => (
         <Project
           key={project.id}
           title={project.title}
+          image={project.image}
           description={project.description}
           tech={project.tech}
           visitLink={this.visitLink}
@@ -28,7 +30,7 @@ class Projects extends React.Component {
           deployLink={project.deployLink}
         />
       ))}
-      </div>
+      </Wrapper>
     )
   }
 }
