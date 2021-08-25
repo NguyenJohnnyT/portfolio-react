@@ -1,5 +1,9 @@
 import React from "react";
 import "./style.css"
+import eevee from "../images/eeveeBig.png"
+import twhlogo from "../images/TWHlogo.png"
+import johnnypfp from "../images/johnnypfp.jfif"
+
 function Home() {
   let styles = {
     header: {
@@ -24,7 +28,7 @@ function Home() {
           <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div className="accordion-body row">
               <div className = "col-4 accord-img-content">
-                <img src="./images/johnnypfp.jfif" className='img-accord m-2' alt="pfp" />
+                <img src={johnnypfp} className='img-accord m-2' alt="pfp" />
               </div>
               <div className="col-8 accord-content pt-2"><strong>Hello!</strong> Welcome to my website!  A soon to be graduate of the UC Berkeley Extension Coding Boot Camp, I have aspirations to becoming a web developer with a heavy interest in the backend routes.  I love music, fitness, teaching and connecting with people of similar mind.  Feel free to check out any of the projects and freelance projects I have done over the past year.  
               </div>
@@ -41,7 +45,7 @@ function Home() {
           <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
             <div className="accordion-body row">
               <div className = "col-4 accord-img-content">
-                <img src="./images/ProjectImages/TWHlogo.png" className='img-accord m-2' alt="TWH" />
+                <img src={twhlogo} className='img-accord m-2' alt="TWH" />
               </div>
                 <div className="col-8 accord-content pt-2"><strong>Looking for a particular skillset?  These are the technologies I work with and have great interest in:</strong> 
                   <ul> 
@@ -65,7 +69,7 @@ function Home() {
           <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
             <div className="accordion-body row">
               <div className = "col-4 accord-img-content">
-                <img src="./images/eeveeBig.png" className='img-accord m-2' alt="eevee" />
+                <img src={eevee} className='img-accord m-2' alt="eevee" />
               </div>
                 <div className="col-8 accord-content pt-2"><strong>For a further exploration of my projects, check out my <a href="https://github.com/NguyenJohnnyT" style={styles.text_deco}>gitHub!</a></strong>
                   <ul> 

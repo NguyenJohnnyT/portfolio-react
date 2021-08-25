@@ -9,6 +9,11 @@ class Form extends React.Component {
     message: ""
   };
 
+  validateEmail(email) {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  }
+
   handleInputChange = event => {
     // Getting the value and name of the input which triggered the change
     let value = event.target.value;
@@ -28,6 +33,8 @@ class Form extends React.Component {
     event.preventDefault();
     if (!this.state.firstName || !this.state.lastName) {
       alert("Fill out your first and last name please!");
+    } else if (!this.validateEmail(this.state.email)) {
+      alert("Please enter a valid email!")
     } else {
       alert(`Hello ${this.state.firstName} ${this.state.lastName}!  Johnny will try to contact you shortly.  Alternatively, send him a message on his LinkedIn page`);
     }
