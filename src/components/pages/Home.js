@@ -9,7 +9,7 @@ function Home() {
     header: {
       "marginRight": "0",
       background: "#ECEFF1",
-      height: '100vh'
+      height: '93vh'
     },
     text_deco: {
       "textDecoration": "none"

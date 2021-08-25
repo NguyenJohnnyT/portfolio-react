@@ -11,7 +11,7 @@ body {
 }
 .jumbotron {
     background-color: rgb(75, 75, 75);
-    height: 100vh
+    height: 93vh;
 }
 
 .img-accord {
@@ -44,7 +44,7 @@ body {
     align-items: center;
     background-color: rgb(75, 75, 75);
     padding-bottom: 30px;
-    height: 100vh
+    height: 93vh
 }
 
 .message {
@@ -62,6 +62,7 @@ body {
 .contactjs {
     background-color: rgb(75, 75, 75);
     color: white;
+    height: 93vh
 }
 
 .nav-icon {
