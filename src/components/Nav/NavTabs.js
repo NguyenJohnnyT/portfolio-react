@@ -36,6 +36,12 @@ function NavTabs() {
           Contact
         </Link>
       </li>
+      <li className='nav-item'>
+      <a href="https://www.linkedin.com/in/johnny-nguyen-17941532/"><img className='nav-icon' src='./images/linkedin.png' alt='linkedin' /></a>
+      </li>
+      <li className='nav-item'>
+        <a href="https://github.com/NguyenJohnnyT"> <img className='nav-icon' src='./images/github.png' alt='github' /></a>
+      </li>
     </ul>
   )
 }

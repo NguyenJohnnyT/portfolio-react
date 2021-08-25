@@ -20,10 +20,10 @@ function Project (props) {
           </li>
         </ul>
       </div>
-      <span onClick={() => props.visitLink(props.repoLink)}>
+      <span className="redirect" onClick={() => props.visitLink(props.repoLink)}>
         REPO
       </span>
-      <span onClick={() => props.visitLink(props.deployLink)}>
+      <span className="redirect" onClick={() => props.visitLink(props.deployLink)}>
         Deploy
       </span>
     </div>

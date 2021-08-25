@@ -10,7 +10,7 @@ class Projects extends React.Component {
   }
 
   visitLink = link => {
-    return 
+    window.location.href = link
     //TODO: add redirect
   }
 

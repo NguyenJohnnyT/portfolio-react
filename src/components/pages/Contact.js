@@ -42,7 +42,10 @@ class Form extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='contactjs'>
+        <h1 className='formheader'>
+          please fill out this form
+        </h1>
         <form className="form">
           <input
             value={this.state.firstName}
@@ -68,7 +71,8 @@ class Form extends React.Component {
             placeholder="Email"
           />
           <br/>
-          <input
+          <textarea
+            className="message"
             value={this.state.message}
             name="message"
             onChange={this.handleInputChange}

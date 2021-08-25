@@ -10,7 +10,8 @@ body {
     max-width: 800px;
 }
 .jumbotron {
-    background-color: darkred;
+    background-color: rgb(75, 75, 75);
+    height: 100vh
 }
 
 .img-accord {
@@ -34,3 +35,56 @@ body {
     background: #464545;
     color: cornsilk;
 }
+
+.form {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(75, 75, 75);
+    padding-bottom: 30px;
+    height: 100vh
+}
+
+.message {
+    height: 300px;
+    width: 500px;
+}
+
+.formheader {
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+}
+
+.contactjs {
+    background-color: rgb(75, 75, 75);
+    color: white;
+}
+
+.nav-icon {
+    height: 35px;
+    width: 35px;
+    padding: 2px
+}
+
+.nav-icon:hover {
+    cursor: pointer;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
