@@ -15,7 +15,7 @@ NPM packages required (`npm i` to install all the packages)
 [React-router-dom](https://reactrouter.com/web/guides/quick-start)
 [gh-pages](https://www.npmjs.com/package/gh-pages)
 
-Access via this [link](https://nguyenjohnnyt.github.io) (https://nguyenjohnnyt.github.io/)
+Access via this [link](https://nguyenjohnnyt.github.io/portfolio-react/) (https://nguyenjohnnyt.github.io/portfolio-react/)
 
 ## Usage
 
