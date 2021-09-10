@@ -2,6 +2,7 @@ const db = require('../config/connection');
 const { User } = require('../models');
 const { users } = require('./userSeeds');
 
+
 db.once('open', async () => {
   try {
     await User.deleteMany({});

@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
   users: [
     {
@@ -8,7 +10,7 @@ module.exports = {
     },
     {
     "username": "jtn",
-    "email": "johnnytrucnguyen@gmail.com",
+    "email": "kwazie@gmail.com",
     "password": "12345678",
     "is_admin": false
     }

@@ -3,8 +3,15 @@ const { User } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
-  Query: {},
-  Mutation: {}
+  Query: {
+    users: async () => {
+      return User.find();
+    },
+    user: async (parent, { username }) => {
+      return User.findOne({ username });
+    }
+  },
+  // Mutation: {}
 };
 
 module.exports = resolvers;
