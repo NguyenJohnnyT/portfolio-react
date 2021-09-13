@@ -14,6 +14,18 @@ Skill.init(
     name: {
       type: DataTypes.STRING,
       allowNull: false
+    },
+    picture: {
+      type: DataTypes.STRING,
     }
+  },
+  {
+    sequelize,
+    timestamps: false,
+      freezeTableName: true,
+      underscored: true,
+      modelName: 'skill',
   }
-)
+);
+
+module.exports = Skill;

@@ -23,7 +23,7 @@ Project.init(
       type: DataTypes.STRING,
     },
     date: {
-      type: DataTypes.date
+      type: DataTypes.DATE
     },
     user_id: {
       type: DataTypes.INTEGER,
