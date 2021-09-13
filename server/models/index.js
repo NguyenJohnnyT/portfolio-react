@@ -13,14 +13,14 @@ Project.belongsTo(User,
 });
 
 Project.belongsToMany(Skill, {
-  as: "projectHasMany",
+  as: "assigned_skills",
   through: ProjectSkill,
   unique: false,
   foreignKey: "project_id"
 })
 
 Skill.belongsToMany(Project, {
-  as: "skillBelongsMany",
+  as: "assigned_projects",
   through: ProjectSkill,
   unique: false,
   foreignKey: "skill_id"
