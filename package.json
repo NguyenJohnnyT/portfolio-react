@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/NguyenJohnnyT/portfolio-react#readme",
   "dependencies": {
-    "concurrently": "^6.2.1",
-    "graphql": "^15.5.3"
+    "concurrently": "^6.2.1"
   }
 }

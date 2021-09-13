@@ -1,5 +1,6 @@
 import React from "react";
-import "../pages/style.css"
+import "../../pages/style.css"
+
 const styles = {
   footer: {
     backgroundColor: "cornsilk"

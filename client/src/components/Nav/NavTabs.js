@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import "../pages/style.css"
+import "../../pages/style.css"
 import logo from "../images/linkedin.png"
 import ghlogo from "../images/github.png"
 import resume from "../images/resume.jpg"
