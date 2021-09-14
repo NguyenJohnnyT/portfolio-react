@@ -1,9 +1,9 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../../pages/style.css"
-import logo from "../images/linkedin.png"
-import ghlogo from "../images/github.png"
-import resume from "../images/resume.jpg"
+import linkedInLogo from "../../assets/img/misc/linkedin.png"
+import ghlogo from "../../assets/img/misc/github.png"
+import resume from "../../assets/img/misc/resume.jpg"
 
 function NavTabs() {
   const location = useLocation();
@@ -43,7 +43,7 @@ function NavTabs() {
       <a href="https://drive.google.com/file/d/15L-Hx7H3OTUSYuiXnyBwsI2fjKnftKUg/view?usp=sharing"><img className='nav-icon' src={resume} alt='resume' /></a>
       </li>
       <li className='nav-item'>
-      <a href="https://www.linkedin.com/in/johnny-nguyen-17941532/"><img className='nav-icon' src={logo} alt='linkedin' /></a>
+      <a href="https://www.linkedin.com/in/johnny-nguyen-17941532/"><img className='nav-icon' src={linkedInLogo} alt='linkedin' /></a>
       </li>
       <li className='nav-item'>
         <a href="https://github.com/NguyenJohnnyT"> <img className='nav-icon' src={ghlogo} alt='github' /></a>

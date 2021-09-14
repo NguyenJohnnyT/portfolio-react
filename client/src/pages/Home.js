@@ -1,8 +1,8 @@
 import React from "react";
 import "./style.css"
-import eevee from "../images/eeveeBig.png"
-import twhlogo from "../images/TWHlogo.png"
-import johnnypfp from "../images/johnnypfp.jfif"
+import eevee from "../assets/img/misc/eeveeBig.png"
+import twhlogo from "../assets/img/projects/TWHlogo.png"
+import johnnypfp from "../assets/img/misc/johnnypfp.jfif"
 
 function Home() {
   let styles = {

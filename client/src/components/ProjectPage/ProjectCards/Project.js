@@ -1,29 +1,30 @@
 import React from "react";
 import "./style.css";
+import placeholder from "../../../assets/img/placeholder/projectPlaceholder350x350";
 
-function Project (props) {
+function Project ( {title, pictures, description, skills, visitLink, gitHub, deploy }) {
   return (
     <div className="card">
       <div className="img-container">
-        <img alt={props.name} src={props.image} />
+        <img alt={title} src={pictures || placeholder} />
       </div>
       <div className="content">
         <ul>
           <li>
-            <strong>{props.title}</strong>
+            <strong>{title || "No title given"}</strong>
           </li>
           <li>
-            <strong>Description: </strong> {props.description}
+            <strong>Description: </strong> {description || "No description given"}
           </li>
           <li>
-            <strong>Tech used: </strong> {props.tech}
+            <strong>Tech used: </strong> {skills || "N/A"}
           </li>
         </ul>
       </div>
-      <span className="redirect" onClick={() => props.visitLink(props.repoLink)}>
+      <span className="redirect" onClick={() => visitLink(gitHub || '#')}>
         REPO
       </span>
-      <span className="redirect" onClick={() => props.visitLink(props.deployLink)}>
+      <span className="redirect" onClick={() => visitLink(deploy || '#')}>
         Deploy
       </span>
     </div>
