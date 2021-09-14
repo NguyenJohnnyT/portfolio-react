@@ -39,6 +39,14 @@ function NavTabs() {
           Contact
         </Link>
       </li>
+      <li className="nav-item">
+        <Link
+          to="/admin"
+          className={location.pathname === "/admin" ? "nav-link active" : "nav-link"}
+        >
+          Contact
+        </Link>
+      </li>
       <li className='nav-item'>
       <a href="https://drive.google.com/file/d/15L-Hx7H3OTUSYuiXnyBwsI2fjKnftKUg/view?usp=sharing"><img className='nav-icon' src={resume} alt='resume' /></a>
       </li>

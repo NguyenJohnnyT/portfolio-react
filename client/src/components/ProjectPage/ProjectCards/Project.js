@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import placeholder from "../../../assets/img/placeholder/projectPlaceholder350x350";
 
-function Project ( {title, pictures, description, skills, visitLink, gitHub, deploy }) {
+function Project ({ title, pictures, description, skills, visitLink, gitHub, deploy }) {
   return (
     <div className="card">
       <div className="img-container">

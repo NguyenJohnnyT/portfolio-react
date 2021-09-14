@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
+import Admin from "./pages/Admin";
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
         <Route exact path="/portfolio-react" component={Home} />
         <Route exact path ="/about" component={About} />
         <Route exact path="/projects" component={Projects} />
-        <Route path="/contact" component={Contact} />
+        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/admin" component={Admin} />
         <Footer />
       </div>
     </Router>
