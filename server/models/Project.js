@@ -19,6 +19,14 @@ Project.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    gitHub: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    deploy: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     pictures: {
       type: DataTypes.STRING,
     },

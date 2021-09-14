@@ -8,13 +8,13 @@ const seedAll = async () => {
   await sequelize.sync({ force : true });
 
   await seedUser();
-  console.log('Users seeded');
+  console.log('----------------Users seeded----------------');
   await seedProject();
-  console.log('Projects seeded');
+  console.log('----------------Projects seeded----------------');
   await seedSkill();
-  console.log('Skills seeded');
+  console.log('----------------Skills seeded----------------');
   await seedProjectSkill();
-  console.log('Proj+Skill join table seeded');
+  console.log('----------------Proj+Skill join table seeded----------------');
   process.exit(0);
 }
 
