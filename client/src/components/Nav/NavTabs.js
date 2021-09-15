@@ -4,6 +4,7 @@ import "../../pages/style.css"
 import linkedInLogo from "../../assets/img/misc/linkedin.png"
 import ghlogo from "../../assets/img/misc/github.png"
 import resume from "../../assets/img/misc/resume.jpg"
+import { loggedIn, logout } from "../../utils/auth"
 
 function NavTabs() {
   const location = useLocation();
@@ -25,8 +26,7 @@ function NavTabs() {
       </li>
       <li className="nav-item">
         <Link
-          to="/projects"
-          className={location.pathname === "/blog" ? "nav-link active" : "nav-link"}
+          onClick={logout}
         >
           Projects
         </Link>
@@ -39,14 +39,35 @@ function NavTabs() {
           Contact
         </Link>
       </li>
-      <li className="nav-item">
-        <Link
-          to="/admin"
-          className={location.pathname === "/admin" ? "nav-link active" : "nav-link"}
-        >
-          Contact
-        </Link>
-      </li>
+      {loggedIn ? (
+        <>
+          <li className="nav-item">
+            <Link
+              to="/admin"
+              className={location.pathname === "/admin" ? "nav-link active" : "nav-link"}
+            >
+              Contact
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/admin"
+              className={location.pathname === "/admin" ? "nav-link active" : "nav-link"}
+            >
+              Signout
+            </Link>
+          </li>
+        </>
+      ) : (
+        <li className="nav-item">
+          <Link
+            to="/login"
+            className={location.pathname === "/login" ? "nav-link active" : "nav-link"}
+          >
+            Login/signup
+          </Link>
+        </li>
+      )}
       <li className='nav-item'>
       <a href="https://drive.google.com/file/d/15L-Hx7H3OTUSYuiXnyBwsI2fjKnftKUg/view?usp=sharing"><img className='nav-icon' src={resume} alt='resume' /></a>
       </li>
