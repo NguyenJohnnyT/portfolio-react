@@ -7,7 +7,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Admin from "./pages/Admin";
-
+import Login from "./pages/Login"
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
         <Route exact path="/projects" component={Projects} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/admin" component={Admin} />
+        <Route exact path="/login" component={Login} />
         <Footer />
       </div>
     </Router>

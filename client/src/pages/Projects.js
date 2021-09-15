@@ -8,11 +8,16 @@ import { getProjects } from "../utils/API"
 function Projects () {
   const [projects, setProjects] = useState([]);
 
+  
+
   useEffect(() => { //! Fetches and sets page up
-    const getProjList = async () => await getProjects();
-    let projList = getProjList();
-    console.log(projList);
-    setProjects(projList);
+    const getProjList = async () => {
+      let projList = await getProjects();
+      console.log("projList", projList);
+      setProjects(projList);
+      console.log(projects);
+    }
+    getProjList();
   }, []);
 
   const visitLink = link => {
@@ -20,21 +25,23 @@ function Projects () {
     //TODO: add redirect
   }
 
-  
   return (
   <Wrapper>
-  {projects.map(project => (
-    <Project
-      key={project.id}
-      name={project.name}
-      pictures={project.pictures}
-      description={project.description}
-      skills={project.assigned_skills}
-      visitLink={visitLink}
-      gitHub={project.gitHub}
-      deploy={project.deploy}
-    />
-  ))}
+  {projects.map((project) => {
+    return (
+      <Project
+        key={project.id}
+        project={project}
+        // name={project.name}
+        // pictures={project.pictures}
+        // description={project.description}
+        // skills={project.assigned_skills}
+        visitLink={visitLink}
+        // gitHub={project.gitHub}
+        // deploy={project.deploy}
+      />
+    )
+  })}
   </Wrapper>
   )
 }

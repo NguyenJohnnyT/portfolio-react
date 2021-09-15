@@ -15,9 +15,9 @@ router.get('/', async (req, res) => {
         }
       ]
     });
-    // console.log(ProjectData);
+    // console.log(psData);
     const ps = psData.map(e => e.get({ plain: true }))
-    // console.log(Project);
+    // console.log(ps);
     res.status(200).json(ps);
 
   } catch (err) {

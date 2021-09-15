@@ -1,30 +1,30 @@
 import React from "react";
 import "./style.css";
-import placeholder from "../../../assets/img/placeholder/projectPlaceholder350x350";
+import placeholder from "../../../assets/img/placeholder/projectPlaceholder350x350.png";
 
-function Project ({ title, pictures, description, skills, visitLink, gitHub, deploy }) {
+function Project ({ project, visitLink }) {
   return (
     <div className="card">
       <div className="img-container">
-        <img alt={title} src={pictures || placeholder} />
+        <img alt={project.name} src={project.pictures || placeholder} />
       </div>
       <div className="content">
         <ul>
           <li>
-            <strong>{title || "No title given"}</strong>
+            <strong>{project.name || "No name given"}</strong>
           </li>
           <li>
-            <strong>Description: </strong> {description || "No description given"}
+            <strong>Description: </strong> {project.description || "No description given"}
           </li>
           <li>
-            <strong>Tech used: </strong> {skills || "N/A"}
+            <strong>Tech used: </strong> {project.skills || "N/A"}
           </li>
         </ul>
       </div>
-      <span className="redirect" onClick={() => visitLink(gitHub || '#')}>
+      <span className="redirect" onClick={() => visitLink(project.gitHub || '#')}>
         REPO
       </span>
-      <span className="redirect" onClick={() => visitLink(deploy || '#')}>
+      <span className="redirect" onClick={() => visitLink(project.deploy || '#')}>
         Deploy
       </span>
     </div>

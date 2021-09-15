@@ -4,7 +4,7 @@ import "../../pages/style.css"
 import linkedInLogo from "../../assets/img/misc/linkedin.png"
 import ghlogo from "../../assets/img/misc/github.png"
 import resume from "../../assets/img/misc/resume.jpg"
-import { loggedIn, logout } from "../../utils/auth"
+import Auth from "../../utils/auth"
 
 function NavTabs() {
   const location = useLocation();
@@ -26,7 +26,8 @@ function NavTabs() {
       </li>
       <li className="nav-item">
         <Link
-          onClick={logout}
+        to="/projects"
+        className={location.pathname === "/projects" ? "nav-link active" : "nav-link"}
         >
           Projects
         </Link>
@@ -39,7 +40,7 @@ function NavTabs() {
           Contact
         </Link>
       </li>
-      {loggedIn ? (
+      {Auth.loggedIn() ? (
         <>
           <li className="nav-item">
             <Link
@@ -53,6 +54,7 @@ function NavTabs() {
             <Link
               to="/admin"
               className={location.pathname === "/admin" ? "nav-link active" : "nav-link"}
+              onClick={Auth.logout}
             >
               Signout
             </Link>

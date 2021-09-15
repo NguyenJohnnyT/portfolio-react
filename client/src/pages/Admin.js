@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./style.css";
 import ListProjects from "../components/Admin/ListProjects/ListProjects";
 import AdminForm from "../components/Admin/AdminForm/AdminForm";
-import getProjects from "../utils/API";
+import { getProjects } from "../utils/API";
 
 const Admin = () => {
   const [ project, setProject ] = useState([]);
