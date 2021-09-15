@@ -16,13 +16,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
-}
-app.use(routes); 
-
-app.get('*', (req, res) => {
+  app.get('*', (req, res) => {
     const buildPath = path.join(__dirname, 'build', 'index.html');
     res.sendFile(buildPath);
   });
+}
+app.use(routes); 
+
+
 
 sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => console.log(`Now listening on ${PORT}`));

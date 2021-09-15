@@ -41,32 +41,22 @@ function NavTabs() {
         </Link>
       </li>
       {Auth.loggedIn() ? (
-        <>
-          <li className="nav-item">
-            <Link
-              to="/admin"
-              className={location.pathname === "/admin" ? "nav-link active" : "nav-link"}
-            >
-              Contact
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/admin"
-              className={location.pathname === "/admin" ? "nav-link active" : "nav-link"}
-              onClick={Auth.logout}
-            >
-              Signout
-            </Link>
-          </li>
-        </>
+        <li className="nav-item">
+          <Link
+            to="/admin"
+            className={location.pathname === "/admin" ? "nav-link active" : "nav-link"}
+            onClick={Auth.logout}
+          >
+            Signout
+          </Link>
+        </li>
       ) : (
         <li className="nav-item">
           <Link
             to="/login"
             className={location.pathname === "/login" ? "nav-link active" : "nav-link"}
           >
-            Login/signup
+            Login
           </Link>
         </li>
       )}
