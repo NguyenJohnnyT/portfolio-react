@@ -18,6 +18,12 @@ body {
     width: 500px;
 }
 
+.fillPage {
+    margin-right: 0;
+    background: "#ECEFF1";
+    height: '93vh'
+}
+
 .jumbotron {
     background-color: rgb(75, 75, 75);
     height: 93vh;

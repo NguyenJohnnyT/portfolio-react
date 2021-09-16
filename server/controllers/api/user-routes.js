@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { User } = require('../../models');
+const { signToken } = require('../../utils/auth')
 //| .../api/users/
 
 router.get('/', async (req, res) => {
@@ -13,6 +14,39 @@ router.get('/', async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
-})
+});
+
+//LOGIN
+router.post('/login', async (req, res) => {
+  try {
+    const userData = await User.findOne({
+      where: {
+        username: req.body.username
+      }
+    });
+
+    if (!userData) {
+      res.status(400).json({ message: "Incorrect email/password.  Please try again!" });
+      return;
+    };
+
+    const validPassword = await userData.checkPassword(req.body.password);
+
+    if (!validPassword) {
+      res.status(400).json({ message: "Incorrect email/password.  Please try again!" });
+      return;
+    };
+
+    const token = signToken(userData);
+    res.status(200).json({
+      token,
+      userData,
+      message: "You are logged in!"
+     });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
 
 module.exports = router;

@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./style.css"
+import { loginUser } from "../utils/API";
+import { Link, useLocation } from "react-router-dom";
+import Auth from "../utils/auth";
 
 const Login = () => {
   let styles = {
@@ -13,19 +16,33 @@ const Login = () => {
     }
   }
 
+  const logMeIn = async (e) => {
+    e.preventDefault();
+    let username = document.getElementById("inputUsername").value;
+    let password = document.getElementById("inputPassword").value;
+    const response = await loginUser({username, password})
+    if (response.ok) {
+      const {token, userData } = await response.json();
+      Auth.login(token, userData.id);
+      document.location.replace('/admin');
+    } else {
+      alert('Invalid credentials!');
+    };
+  }
+
   return (
     <div style={styles.header} id="loginpage" className='row justify-content-center p-3'>
       <form id='form'>
         <div className="mb-3">
-          <label for="exampleInputEmail1" className="form-label">Username</label>
-          <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+          <label htmlFor="labelUsername" className="form-label">Username</label>
+          <input type="username" className="form-control" id="inputUsername" aria-describedby="emailHelp" />
           <div id="usernameHelp" className="form-text">Administrative access for now.</div>
         </div>
         <div className="mb-3">
-          <label for="exampleInputPassword1" className="form-label">Password</label>
-          <input type="password" className="form-control" id="exampleInputPassword1" />
+          <label htmlFor="labelPassword" className="form-label">Password</label>
+          <input type="password" className="form-control" id="inputPassword" />
         </div>
-        <button type="submit" className="btn btn-primary">Submit</button>
+        <button type="submit" onClick={logMeIn} className="btn btn-primary">Submit</button>
       </form>
     </div>
   )

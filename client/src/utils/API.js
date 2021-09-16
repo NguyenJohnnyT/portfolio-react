@@ -9,6 +9,10 @@ export const getProjects = async () => {
   return data
 };
 
+export const createProjects = async () => {
+  return
+}
+
 export const createUser = (userData) => {
   return fetch('/api/user/signup', {
     method: 'POST',
@@ -20,7 +24,7 @@ export const createUser = (userData) => {
 };
 
 export const loginUser = (userData) => {
-  return fetch('/api/user/login', {
+  return fetch('/api/users/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
