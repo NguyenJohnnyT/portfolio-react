@@ -12,7 +12,7 @@ function Project ({ project, visitLink }) {
       <div className="img-container">
         <iframe title={project.name} width="340" height="300" src={project.pictures || placeholder} />
       </div>
-      <div className="content">
+      <div className="card-body content">
         <ul>
           <li>
             <strong>{project.name || "No name given"}</strong>
@@ -28,19 +28,19 @@ function Project ({ project, visitLink }) {
           </li>
         </ul>
       </div>
-      <div className="d-flex justify-content-around">
-      <img 
-      alt="github link" 
-      src={github} 
-      width="50px" height="50px" 
-      className="redirect" 
-      onClick={() => visitLink(project.gitHub || '#')} />
-      <img 
-      alt="deploy link" 
-      src={web} 
-      width="50px" height="50px" 
-      className="redirect" 
-      onClick={() => visitLink(project.deploy || '#')} />
+      <div className="d-flex justify-content-around card-footer">
+        <img 
+        alt="github link" 
+        src={github} 
+        width="50px" height="50px" 
+        className="redirect nav-icon" 
+        onClick={() => visitLink(project.gitHub || '#')} />
+        <img 
+        alt="deploy link" 
+        src={web} 
+        width="50px" height="50px" 
+        className="redirect nav-icon" 
+        onClick={() => visitLink(project.deploy || '#')} />
       </div>
     </div>
   )
