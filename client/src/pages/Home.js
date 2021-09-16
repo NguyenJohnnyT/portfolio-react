@@ -6,11 +6,6 @@ import johnnypfp from "../assets/img/misc/johnnypfp.jfif"
 
 function Home() {
   let styles = {
-    header: {
-      "marginRight": "0",
-      background: "#ECEFF1",
-      height: '93vh'
-    },
     text_deco: {
       "textDecoration": "none",
       "color": "gold"
@@ -18,7 +13,7 @@ function Home() {
   }
 
   return (
-    <div className="row d-flex justify-content-center" style={styles.header}>
+    <div className="row d-flex justify-content-center fillPage">
 
       <div className="accordion m-3" id="accordionExample">
 

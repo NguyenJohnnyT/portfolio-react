@@ -10,18 +10,28 @@ body {
     max-width: 800px;
 }
 
-#loginpage {
-    height:100%
-}
-
 #form {
     width: 500px;
 }
 
+.noLink {
+    text-decoration: none;
+    color: rgb(143, 255, 143)
+}
+
+.noLink:hover {
+    cursor: pointer;
+    color: rgb(98, 177, 98)
+}
+
+.noLink:visited {
+    color: rgb(226, 114, 226)
+}
+
 .fillPage {
     margin-right: 0;
-    background: "#ECEFF1";
-    height: '93vh'
+    background-color: #ECEFF1;
+    height: 93vh
 }
 
 .jumbotron {

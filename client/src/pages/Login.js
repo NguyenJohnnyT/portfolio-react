@@ -6,11 +6,6 @@ import Auth from "../utils/auth";
 
 const Login = () => {
   let styles = {
-    header: {
-      "marginRight": "0",
-      background: "#ECEFF1",
-      height: '93vh'
-    },
     text_deco: {
       "textDecoration": "none"
     }
@@ -31,7 +26,7 @@ const Login = () => {
   }
 
   return (
-    <div style={styles.header} id="loginpage" className='row justify-content-center p-3'>
+    <div id="loginpage" className='row justify-content-center p-3 fillPage'>
       <form id='form'>
         <div className="mb-3">
           <label htmlFor="labelUsername" className="form-label">Username</label>
