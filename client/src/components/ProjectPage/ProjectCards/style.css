@@ -51,3 +51,15 @@
   text-shadow: 1px 1px grey;
   cursor: pointer
 }
+
+.projTitle {
+  font-size: 30px;
+}
+
+.strongTitle {
+  font-size: 20px;
+}
+
+.inBetweenSkills {
+  font-size: 18px;
+}

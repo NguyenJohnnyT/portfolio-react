@@ -7,21 +7,20 @@ import web from "../../../assets/img/misc/web.png"
 
 function Project ({ project, visitLink }) {
   console.log(project);
+
   return (
     <div className="card">
       <div className="img-container">
         <iframe title={project.name} width="340" height="300" src={project.pictures || placeholder} />
       </div>
-      <div className="card-body content">
-        <ul>
+      <div className="card-body content p-2">
+        <p className="projTitle">{project.name || "No name given"}</p>
+        <ul className="ps-2">
           <li>
-            <strong>{project.name || "No name given"}</strong>
+            <strong className='strongTitle'>Description: </strong> {project.description || "No description given"}
           </li>
           <li>
-            <strong>Description: </strong> {project.description || "No description given"}
-          </li>
-          <li>
-            <strong>Tech used: </strong> {project.assigned_skills.length !== 0 ? 
+            <strong className='strongTitle'>Tech Used:</strong>  {project.assigned_skills.length !== 0 ? 
             project.assigned_skills.map(skill => <Skill skill={skill.name} />) 
             : "N/A"
             }
