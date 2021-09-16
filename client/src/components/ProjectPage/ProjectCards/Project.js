@@ -21,7 +21,7 @@ function Project ({ project, visitLink }) {
           </li>
           <li>
             <strong className='strongTitle'>Tech Used:</strong>  {project.assigned_skills.length !== 0 ? 
-            project.assigned_skills.map(skill => <Skill skill={skill.name} />) 
+            project.assigned_skills.map(skill => <Skill skill={skill.name} key={skill.id} />) 
             : "N/A"
             }
           </li>

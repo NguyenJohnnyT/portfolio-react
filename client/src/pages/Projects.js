@@ -15,7 +15,6 @@ function Projects () {
       let projList = await getProjects();
       console.log("projList", projList);
       setProjects(projList);
-      console.log(projects);
     }
     getProjList();
   }, []);
