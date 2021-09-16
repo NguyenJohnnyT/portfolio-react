@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css"
 function About () {
   return (
-    <div className="jumbotron jumbotron-fluid p-4 text-light d-flex align-items-center">
+    <div className="jumbotron jumbotron-fluid p-4 text-light d-flex align-items-center fillpage">
       <h1 className="display-4 m-5">Johnny Nguyen</h1>
       <div className='col-8'>
         <p>Based in Santa Clara, California, I am an aspiring programmer with practice in various languages including HTML, CSS, JavaScript, and Python</p>

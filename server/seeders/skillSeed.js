@@ -1,6 +1,7 @@
 const { Skill } = require('../models');
 
 const skillData = [
+  //|1
   {
     name: "JavaScript"
   },
@@ -28,6 +29,7 @@ const skillData = [
   {
     name: "JSON"
   },
+  //|10
   {
     name: "Node.js"
   },
@@ -58,6 +60,7 @@ const skillData = [
   {
     name: "Object-Oriented Programming"
   },
+  //|20
   {
     name: "React"
   },
@@ -88,7 +91,13 @@ const skillData = [
   {
     name: "howler"
   },
-  
+  //|30
+  {
+    name: "Local Storage"
+  },
+  {
+    name: "Express-sessions"
+  },
 ];
 
 const seedSkill = () => Skill.bulkCreate(skillData);

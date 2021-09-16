@@ -14,10 +14,6 @@ body {
     width: 500px;
 }
 
-.projTitle {
-    font-size: 15px;
-}
-
 .noLink {
     text-decoration: none;
     color: rgb(143, 255, 143)
@@ -35,7 +31,7 @@ body {
 .fillPage {
     margin-right: 0;
     background-color: #ECEFF1;
-    height: 93vh
+    height: 89vh
 }
 
 .jumbotron {

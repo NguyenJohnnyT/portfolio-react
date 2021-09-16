@@ -29,8 +29,17 @@ const projectData = [
     gitHub: "https://github.com/NguyenJohnnyT/CodeQuizChallenge",
     deploy: "https://nguyenjohnnyt.github.io/CodeQuizChallenge/",
     description: "One of the first projects from UCBerkeley Boot Camp that I built from scratch.  A coding quiz that utilizes local storage to store high scores and scores how quickly players answer correctly.",
+    pictures: "https://drive.google.com/file/d/1orvzhWcD-TrjgPf7REB13vy9sIoaQVOS/preview",
     user_id: 1
-  }
+  },
+  {
+    name: "Tech Blog",
+    gitHub: "https://github.com/NguyenJohnnyT/tech-blog-application",
+    deploy: "https://dry-spire-24651.herokuapp.com/",
+    description: "Interact with a tech blog, create an account safely with a username and salted and hashed password, view and comment on posts, or make your own blog post that other users can interact with!",
+    pictures: "https://drive.google.com/file/d/1JHNc4UWlybL3IsgNz-Os4z1bXuVaptVr/preview",
+    user_id: 1
+  },
 ];
 
 const seedProject = () => Project.bulkCreate(projectData);
