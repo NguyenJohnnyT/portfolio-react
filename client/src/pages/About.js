@@ -4,11 +4,11 @@ import me from "../assets/img/me/me.png"
 function About () {
   return (
     <div className="jumbotron jumbotron-fluid p-4 text-light d-flex align-items-center fillpage">
-      <div className='col-4 d-flex flex-column align-items-center'>
-        <h1 className="display-4 m-5">Johnny Nguyen</h1>
+      <div className='col-4 d-flex flex-column align-items-center about-me'>
+        <h1 className="display-4 m-5 about-name">Johnny Nguyen</h1>
         <img src={me} className='pfp' alt="johnny"/>
       </div>
-      <div className='col-8'>
+      <div className='col-8 about-text'>
         <p>Based in Santa Clara, California, I am an aspiring programmer with practice in various languages including HTML, CSS, JavaScript, and Python</p>
         <br/>
         <p>This portfolio was built with React and includes a backend database that allows an authenticated administrator to add and remove projects and skills into the portfolio database.  Currently, only the administrator (me) can login to the website<sup><i>as long as my username and password has not been leaked!</i></sup>.  Passwords are hashed and salted via bcrypt.  Logged in users have sessions utilized by jsonwebtokens. Future features include allowing logged in users to personally send me messages via a message board.</p>

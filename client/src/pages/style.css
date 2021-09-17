@@ -118,4 +118,26 @@ body {
     30% { transform: translate(0px, 0px) rotate(0deg); }
     70% { transform: translate(0px, -1px) rotate(-1deg); }
     90% { transform: translate(0px, 0px) rotate(0deg); }
-  }
+}
+
+@media only screen and (max-width:1000px) {
+    .jumbotron {
+        flex-direction: column;
+    }
+    .about-text {
+        overflow: scroll;
+        height: 300px;
+        display: block;
+    }
+    .about-me {
+        display: block;
+        height: 400px;
+    }
+    .pfp {
+        height: 200px;
+        width: 200px;
+    }
+    .about-name {
+        font-size: 28px;
+    }
+}
