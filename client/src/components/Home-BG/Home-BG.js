@@ -7,13 +7,13 @@ import placeholder from '../../assets/img/placeholder/placeholderBG.png'
 const HomeBG = () => {
   const [background, setBackground] = useState([])
   
-  // useEffect( ()=> {
-  //   const getBG = async () => {
-  //     let url = await unsplashAPI();
-  //     setBackground(url);
-  //   };
-  //   getBG();
-  // }, [])
+  useEffect( ()=> {
+    const getBG = async () => {
+      let url = await unsplashAPI();
+      setBackground(url);
+    };
+    getBG();
+  }, [])
   
   const styles = {
     backgroundURL: {
@@ -30,8 +30,8 @@ const HomeBG = () => {
   return(
     <>
     {background.length > 1 
-    ? <HomeText textStyle={styles.backgroundURL} />
-    : <HomeText textStyle={styles.noURL}/>
+    ? <HomeText bgStyle={styles.backgroundURL} />
+    : <HomeText bgStyle={styles.noURL}/>
     }
     </>
   )

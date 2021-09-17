@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css"
 import me from "../assets/img/me/me.png"
+
 function About () {
   return (
     <div className="jumbotron jumbotron-fluid p-4 text-light d-flex align-items-center fillpage">

@@ -1,12 +1,12 @@
 import React from 'react';
 import './style.css';
 
-const HomeText = ({textStyle}) => {
+const HomeText = ({bgStyle}) => {
   return (
     <div 
     id="bg-img" 
     className="bg-image shadow-2-strong" 
-    style={textStyle}>
+    style={bgStyle}>
        <div className="mask shadows">
         <div className="container d-flex align-items-center justify-content-center text-center position-absolute top-50 start-50 translate-middle h-50">
           <div id='hero-box' className="bg-dark  p-5 text-white">
