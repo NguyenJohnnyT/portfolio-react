@@ -2,29 +2,76 @@ body {
     font-family: 'Gowun Batang', serif;
 }
 
-#linksToWork {
-    font-family: 'Noto Sans', sans-serif;
-}
-
-#accordionExample {
-    max-width: 800px;
-}
-
 #form {
     width: 500px;
 }
 
-.pfp {
-    height: 300px;
-    width: 300px;
+#linksToWork {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+
+.about-code {
+    color: lightgreen
+}
+
+.contactjs {
+    background-color: rgb(75, 75, 75);
+    color: white;
+    height: 93vh
+}
+
+.fillPage {
+    margin-right: 0;
+    background-color: #ECEFF1;
+    height: 89vh
+}
+
+.form {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(75, 75, 75);
+    padding-bottom: 30px;
+    height: 93vh
+}
+
+.formheader {
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+}
+.img-accord {
     border-radius: 50%;
+    max-height: 200px;
+    max-width: 200px;
 }
 
-.strongTitle {
-    font-size: 20px;
-    color:rgb(163, 133, 177)
+.jumbotron {
+    background-color: rgb(75, 75, 75);
+    height: 93vh;
 }
 
+.message {
+    height: 300px;
+    width: 100%;
+    max-width:500px;
+}
+
+.nav-icon {
+    height: 35px;
+    width: 35px;
+    padding: 2px;
+}
+
+.nav-icon:hover {
+    cursor: pointer;
+    animation: shake 1s;
+    animation-iteration-count: infinite
+}
 .noLink {
     text-decoration: none;
     color: rgb(143, 255, 143)
@@ -39,78 +86,15 @@ body {
     color: rgb(226, 114, 226)
 }
 
-.fillPage {
-    margin-right: 0;
-    background-color: #ECEFF1;
-    height: 89vh
-}
-
-.jumbotron {
-    background-color: rgb(75, 75, 75);
-    height: 93vh;
-}
-
-.img-accord {
-    border-radius: 50%;
-    max-height: 200px;
-    max-width: 200px;
-}
-
-.accord-img-content{
-    background-color: darkblue;
-    border-radius: 10% 0 0 10%;
-}
-
-.accord-content {
-    background:darkblue;
-    color: cornsilk;
-    font-family: 'Noto Sans', sans-serif;
-}
-
-.accordion-button {
-    background: #464545;
-    color: cornsilk;
-}
-
-.form {
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(75, 75, 75);
-    padding-bottom: 30px;
-    height: 93vh
-}
-
-.message {
+.pfp {
     height: 300px;
-    width: 100%;
-    max-width:500px;
+    width: 300px;
+    border-radius: 50%;
 }
 
-.formheader {
-    display: flex;
-    justify-content: center;
-    padding: 2px;
-}
-
-.contactjs {
-    background-color: rgb(75, 75, 75);
-    color: white;
-    height: 93vh
-}
-
-.nav-icon {
-    height: 35px;
-    width: 35px;
-    padding: 2px;
-}
-
-.nav-icon:hover {
-    cursor: pointer;
-    animation: shake 1s;
-    animation-iteration-count: infinite
+.strongTitle {
+    font-size: 20px;
+    color:rgb(163, 133, 177)
 }
 
 @keyframes shake {
@@ -121,23 +105,27 @@ body {
 }
 
 @media only screen and (max-width:1000px) {
-    .jumbotron {
-        flex-direction: column;
-    }
     .about-text {
         overflow: scroll;
         height: 300px;
         display: block;
     }
+
     .about-me {
         display: block;
         height: 400px;
     }
+        
+    .about-name {
+        font-size: 28px;
+    }
+
+    .jumbotron {
+        flex-direction: column;
+    }
+
     .pfp {
         height: 200px;
         width: 200px;
-    }
-    .about-name {
-        font-size: 28px;
     }
 }

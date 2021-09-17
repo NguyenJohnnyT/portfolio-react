@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./style.css"
 import { loginUser } from "../utils/API";
-import { Link, useLocation } from "react-router-dom";
 import Auth from "../utils/auth";
 
 const Login = () => {
