@@ -5,7 +5,6 @@ export const getProjects = async () => {
     },
   });
   let data = await response.json();
-  console.log('response', data);
   return data
 };
 

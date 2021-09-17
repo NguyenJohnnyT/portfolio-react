@@ -1,7 +1,7 @@
 export const unsplashAPI = async () => {
 
   if (!process.env.REACT_APP_UNSPLASH_API_KEY) {
-    console.error("WHERE IS THE API KEY");
+    console.error("WHERE IS THE API KEY?!");
     return [];
   };
 
@@ -10,7 +10,6 @@ export const unsplashAPI = async () => {
   try {
     const response = await fetch(unsplashURL);
     const data = await response.json();
-    console.log("data unsplash", data);
     data.forEach(apiResult => {
       imageURLs.push(apiResult.urls.regular)
     });

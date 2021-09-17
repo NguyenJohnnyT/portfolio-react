@@ -11,7 +11,6 @@ function Projects () {
     useEffect(() => { //! Fetches and sets page up
     const getProjList = async () => {
       let projList = await getProjects();
-      console.log("projList", projList);
       setProjects(projList);
     }
     getProjList();
@@ -28,13 +27,7 @@ function Projects () {
       <Project
         key={project.id}
         project={project}
-        // name={project.name}
-        // pictures={project.pictures}
-        // description={project.description}
-        // skills={project.assigned_skills}
         visitLink={visitLink}
-        // gitHub={project.gitHub}
-        // deploy={project.deploy}
       />
     )
   })}
