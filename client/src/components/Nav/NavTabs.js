@@ -61,7 +61,7 @@ function NavTabs() {
         </li>
       )}
       <li className='nav-item'>
-      <a href="https://drive.google.com/file/d/15L-Hx7H3OTUSYuiXnyBwsI2fjKnftKUg/view?usp=sharing"><img className='nav-icon' src={resume} alt='resume' /></a>
+      <a href="https://drive.google.com/file/d/1gJgZJ8srJPhE_GBEWH_9If2i3KW6Lkgh/view?usp=sharing"><img className='nav-icon' src={resume} alt='resume' /></a>
       </li>
       <li className='nav-item'>
       <a href="https://www.linkedin.com/in/johnny-nguyen-17941532/"><img className='nav-icon' src={linkedInLogo} alt='linkedin' /></a>
