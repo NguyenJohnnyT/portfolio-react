@@ -10,7 +10,7 @@ function Project ({ project, visitLink }) {
   return (
     <div className="card">
       <div className="img-container">
-        <img alt={project.name} width="340" height="300" src={project.pictures || placeholder} />
+        <img alt={project.name} src={project.pictures || placeholder} />
       </div>
       <div className="card-body content p-2">
         <p className="projTitle">{project.name || "No name given"}</p>
