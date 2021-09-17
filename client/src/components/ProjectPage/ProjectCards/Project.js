@@ -6,7 +6,6 @@ import github from "../../../assets/img/misc/github.png"
 import web from "../../../assets/img/misc/web.png"
 
 function Project ({ project, visitLink }) {
-  console.log(project);
 
   return (
     <div className="card">

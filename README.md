@@ -4,7 +4,7 @@
 
 Johnny Nguyen's portfolio that contains information about him, links to his work, methods of contacting him, and resume.  Within the links to his work contain various projects and assignments that were done in the UC Berkeley bootcamp, business, and other personal ventures.
 
-This portfolio is built with React.
+This portfolio is built with React and has a server-side database.
 
 ## Installation
 

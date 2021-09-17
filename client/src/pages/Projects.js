@@ -8,9 +8,7 @@ import { getProjects } from "../utils/API"
 function Projects () {
   const [projects, setProjects] = useState([]);
 
-  
-
-  useEffect(() => { //! Fetches and sets page up
+    useEffect(() => { //! Fetches and sets page up
     const getProjList = async () => {
       let projList = await getProjects();
       console.log("projList", projList);
@@ -21,7 +19,6 @@ function Projects () {
 
   const visitLink = link => {
     window.location.href = link
-    //TODO: add redirect
   }
 
   return (

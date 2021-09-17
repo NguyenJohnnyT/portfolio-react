@@ -5,12 +5,6 @@ import { Link, useLocation } from "react-router-dom";
 import Auth from "../utils/auth";
 
 const Login = () => {
-  let styles = {
-    text_deco: {
-      "textDecoration": "none"
-    }
-  }
-
   const logMeIn = async (e) => {
     e.preventDefault();
     let username = document.getElementById("inputUsername").value;

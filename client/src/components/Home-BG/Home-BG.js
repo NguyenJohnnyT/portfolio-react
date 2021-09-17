@@ -10,9 +10,6 @@ const HomeBG = () => {
       let url = await unsplashAPI();
       setBackground(url);
     };
-    // const bgArr = getBG();
-    // console.log(bgArr);
-    // let randomIdx = Math.floor(Math.random()*bgArr.length)
     getBG();
   }, [])
   

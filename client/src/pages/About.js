@@ -5,8 +5,8 @@ function About () {
   return (
     <div className="jumbotron jumbotron-fluid p-4 text-light d-flex align-items-center fillpage">
       <div className='col-4 d-flex flex-column align-items-center'>
-      <h1 className="display-4 m-5">Johnny Nguyen</h1>
-      <img src={me} className='pfp' alt="johnny"/>
+        <h1 className="display-4 m-5">Johnny Nguyen</h1>
+        <img src={me} className='pfp' alt="johnny"/>
       </div>
       <div className='col-8'>
         <p>Based in Santa Clara, California, I am an aspiring programmer with practice in various languages including HTML, CSS, JavaScript, and Python</p>
