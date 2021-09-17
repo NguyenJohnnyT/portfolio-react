@@ -9,9 +9,6 @@ import Projects from "./pages/Projects";
 import Admin from "./pages/Admin";
 import Login from "./pages/Login"
 
-
-console.log(process.env.REACT_APP_UNSPLASH_API_KEY)
-
 function App() {
   return (
     <Router>
