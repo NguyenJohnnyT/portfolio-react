@@ -1,0 +1,10 @@
+#bg-img {
+  height:100vh
+}
+
+#hero-box {
+  opacity: 0.8
+}
+.shadows {
+  background-color: rgba(0, 0, 0, 0.8);
+}
