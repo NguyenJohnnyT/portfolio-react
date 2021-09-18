@@ -1,7 +1,7 @@
 # Johnny Nguyen Portfolio
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 #
-## [Deployed Link](jtn-portfolio.herokuapp.com)
+## [Deployed Link](https://jtn-portfolio.herokuapp.com)
 ![Demo](./assets/README_gif.gif)
 #
 
