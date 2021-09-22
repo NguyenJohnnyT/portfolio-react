@@ -35,7 +35,7 @@ const projectData = [
   {
     name: "Tech Blog",
     gitHub: "https://github.com/NguyenJohnnyT/tech-blog-application",
-    deploy: "https://dry-spire-24651.herokuapp.com/",
+    deploy: "https://jtn-tech-blog.herokuapp.com/",
     description: "Interact with a tech blog, create an account safely with a username and salted and hashed password, view and comment on posts, or make your own blog post that other users can interact with!",
     pictures: "https://i.imgur.com/CskMFqF.png",
     user_id: 1
