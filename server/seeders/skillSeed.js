@@ -98,6 +98,31 @@ const skillData = [
   {
     name: "Express-sessions"
   },
+  {
+    name: "Amazon Web Services (AWS)"
+  },
+  {
+    name: "Amazon S3"
+  },
+  {
+    name: "Amazon EC2"
+  },
+  {
+    name: "Amazon DynamoDB"
+  },
+  {
+    name: "aws-sdk"
+  },
+  {
+    name: "multer"
+  },
+  {
+    name: "nginx"
+  },
+  {
+    name: "pm2"
+  }
+  //|40 below
 ];
 
 const seedSkill = () => Skill.bulkCreate(skillData);

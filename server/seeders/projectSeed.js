@@ -40,6 +40,14 @@ const projectData = [
     pictures: "https://i.imgur.com/CskMFqF.png",
     user_id: 1
   },
+  {
+    name: "AWS Thoughts",
+    gitHub: "https://github.com/NguyenJohnnyT/aws-thought",
+    deploy: "http://3.22.175.224/",
+    description: "Practicing with Amazon Web Services. Post images and thoughts in a twitter-like web application through AWS services S3 & DynamoDB. Deployed onto an EC2 Virtual Server in the Cloud.",
+    pictures: "https://i.imgur.com/Cp4KFz3.png",
+    user_id: 1
+  }
 ];
 
 const seedProject = () => Project.bulkCreate(projectData);

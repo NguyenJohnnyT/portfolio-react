@@ -293,7 +293,88 @@ const projectSkillData = [
   {
     project_id: 5,
     skill_id: 31
-  },  
+  },
+  //! AWS Thought
+  {
+    project_id: 6,
+    skill_id: 1
+  },
+  {
+    project_id: 6,
+    skill_id: 2
+  },
+  {
+    project_id: 6,
+    skill_id: 3
+  },
+  {
+    project_id: 6,
+    skill_id: 4
+  },
+  {
+    project_id: 6,
+    skill_id: 6
+  },
+  {
+    project_id: 6,
+    skill_id: 8
+  },
+  {
+    project_id: 6,
+    skill_id: 9
+  },
+  {
+    project_id: 6,
+    skill_id: 10
+  },
+  {
+    project_id: 6,
+    skill_id: 11
+  },
+  {
+    project_id: 6,
+    skill_id: 20
+  },
+  {
+    project_id: 6,
+    skill_id: 21
+  },
+  {
+    project_id: 6,
+    skill_id: 22
+  },
+  {
+    project_id: 6,
+    skill_id: 32
+  },
+  {
+    project_id: 6,
+    skill_id: 33
+  },
+  {
+    project_id: 6,
+    skill_id: 34
+  },
+  {
+    project_id: 6,
+    skill_id: 35
+  },
+  {
+    project_id: 6,
+    skill_id: 36
+  },
+  {
+    project_id: 6,
+    skill_id: 37
+  },
+  {
+    project_id: 6,
+    skill_id: 38
+  },
+  {
+    project_id: 6,
+    skill_id: 39
+  },
 ];
 
 const seedProjectSkill = () => ProjectSkill.bulkCreate(projectSkillData);
