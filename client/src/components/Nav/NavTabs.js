@@ -4,6 +4,7 @@ import "../../pages/style.css"
 import linkedInLogo from "../../assets/img/misc/linkedin.png"
 import ghlogo from "../../assets/img/misc/github.png"
 import resume from "../../assets/img/misc/resume.jpg"
+import mediumLogo from "../../assets/img/misc/medium.png"
 import Auth from "../../utils/auth"
 
 function NavTabs() {
@@ -68,6 +69,9 @@ function NavTabs() {
       </li>
       <li className='nav-item'>
         <a href="https://github.com/NguyenJohnnyT"> <img className='nav-icon' src={ghlogo} alt='github' /></a>
+      </li>
+      <li className='nav-item'>
+        <a href="https://mechocreamy.medium.com/"> <img className='nav-icon' src={mediumLogo} alt='medium' /></a>
       </li>
     </ul>
   )
