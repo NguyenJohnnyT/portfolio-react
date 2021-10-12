@@ -102,9 +102,9 @@ body {
     90% { transform: translate(0px, 0px) rotate(0deg); }
 }
 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:1000px), (max-height: 810px)  {
     .about-text {
-        overflow: scroll;
+        overflow: auto;
         height: 300px;
         display: block;
     }
