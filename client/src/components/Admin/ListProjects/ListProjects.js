@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
-
+import React from "react";
+import ListProject from "./ListProject"
+import "./style.css"
 /*
  projectList == 
   [
@@ -16,11 +17,16 @@ import React, { useEffect, useState } from "react";
  */
 function ListProjects ({ projectList }) { //props.projectList
   return (
-    <>
-    {projectList.forEach(project => {
-      return project.name
-    })}
-    </>
+    <div className='col listProjects'>
+    {projectList.map( project =>
+        <ListProject 
+          key={project.id}
+          project={project}
+          className='row'
+        />
+      )
+    }
+    </div>
   )
 }
 

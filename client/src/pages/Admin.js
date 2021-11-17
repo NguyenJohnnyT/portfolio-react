@@ -38,7 +38,7 @@ const Admin = () => {
           <div className='row'>
             <ListProjects className='col' projectList={project} />
           </div>
-          <div className='row'>
+          <div className='row adminForm'>
             <AdminForm className='col'/>
           </div>
        </>
