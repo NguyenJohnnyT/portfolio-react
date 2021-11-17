@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-
 /*
  projectList == 
   [
@@ -15,9 +14,12 @@ import React, { useEffect, useState } from "react";
     }, ...
   ]
  */
-function ListProjects () { //props.projectList
+function ListProjects ({ projectList }) { //props.projectList
   return (
     <>
+    {projectList.forEach(project => {
+      return project.name
+    })}
     </>
   )
 }

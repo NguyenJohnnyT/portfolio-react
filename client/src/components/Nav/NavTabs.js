@@ -45,6 +45,8 @@ function NavTabs() {
           </li>
           <li className="nav-item">
             <Link
+              className={location.pathname === "/logout" ?
+              "nav-link active" : "nav-link"}
               onClick={Auth.logout}
             >
               Signout
