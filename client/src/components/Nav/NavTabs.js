@@ -45,6 +45,8 @@ function NavTabs() {
           </li>
           <li className="nav-item">
             <Link
+              className={location.pathname === "/logout" ?
+              "nav-link active" : "nav-link"}
               onClick={Auth.logout}
             >
               Signout
@@ -62,7 +64,7 @@ function NavTabs() {
         </li>
       )}
       <li className='nav-item'>
-      <a href="https://drive.google.com/file/d/13FnzkKVuJHeIfUhwujQaHzvz0sbQHt6P/view?usp=sharing"><img className='nav-icon' src={resume} alt='resume' /></a>
+      <a href="https://drive.google.com/file/d/1BUOfeKCznOz8PPV31z9EsKNtA8-FdGtQ/view?usp=sharing"><img className='nav-icon' src={resume} alt='resume' /></a>
       </li>
       <li className='nav-item'>
       <a href="https://www.linkedin.com/in/johnny-truc-nguyen"><img className='nav-icon' src={linkedInLogo} alt='linkedin' /></a>
