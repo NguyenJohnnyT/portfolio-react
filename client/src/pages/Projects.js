@@ -16,10 +16,6 @@ function Projects () {
     getProjList();
   }, []);
 
-  const visitLink = link => {
-    window.location.href = link
-  }
-
   return (
   <Wrapper>
   {projects.map((project) => {
@@ -27,7 +23,6 @@ function Projects () {
       <Project
         key={project.id}
         project={project}
-        visitLink={visitLink}
       />
     )
   })}

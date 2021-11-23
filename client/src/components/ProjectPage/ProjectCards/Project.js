@@ -5,7 +5,7 @@ import placeholder from "../../../assets/img/placeholder/projectPlaceholder350x3
 import github from "../../../assets/img/misc/github.png"
 import web from "../../../assets/img/misc/web.png"
 
-function Project ({ project, visitLink }) {
+function Project ({ project }) {
 
   return (
     <div className="card">
@@ -27,18 +27,20 @@ function Project ({ project, visitLink }) {
         </ul>
       </div>
       <div className="d-flex justify-content-around card-footer">
+        <a href={project.gitHub || '#'}>
         <img 
         alt="github link" 
         src={github} 
         width="50px" height="50px" 
         className="redirect nav-icon" 
-        onClick={() => visitLink(project.gitHub || '#')} />
+        /></a>
+        <a href={project.deploy || '#'}>
         <img 
         alt="deploy link" 
         src={web} 
         width="50px" height="50px" 
         className="redirect nav-icon" 
-        onClick={() => visitLink(project.deploy || '#')} />
+        /></a>
       </div>
     </div>
   )
