@@ -1,12 +1,15 @@
 import React from "react";
+import { useProjectContext } from "../../../utils/ProjectContext"
 
-function listProject (props) {
-  const showModal = () => console.log(props.project)
+function ListProject ({ project }) {
+  const { addProject } = useProjectContext();
+
+
   return (
-    <div onClick={showModal} className='row'>
-      {props.project.name}
+    <div onClick={() => addProject(project)} className='row'>
+      {project.name}
     </div>
   )
 }
 
-export default listProject
+export default ListProject
