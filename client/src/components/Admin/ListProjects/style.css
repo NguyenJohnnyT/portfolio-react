@@ -2,3 +2,14 @@
   height: 93vh;
   padding:50px
 }
+
+.projectText {
+  width:fit-content;
+  background-color: #dee1e3;
+  border-style:solid;
+  border-color: gold;
+  border-width: 2px;
+  border-radius: 50%;
+  margin: 2px;
+  padding: 10px;
+}

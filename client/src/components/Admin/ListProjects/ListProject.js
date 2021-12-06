@@ -6,7 +6,7 @@ function ListProject ({ project }) {
 
 
   return (
-    <div onClick={() => addProject(project)} className='row'>
+    <div onClick={() => addProject(project)} className='row projectText'>
       {project.name}
     </div>
   )
