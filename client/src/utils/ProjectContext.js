@@ -8,8 +8,8 @@ export default function ProjectProvider({ children }) {
   const [currentProject, setCurrentProject] = useState()
 
   const addProject = (project) => {
-    console.log(project);
-    setCurrentProject([project])
+    console.log('context change', project);
+    setCurrentProject(project)
   }
   return (
     <ProjectContext.Provider value={{currentProject, addProject }}>
