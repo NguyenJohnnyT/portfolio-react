@@ -10,10 +10,11 @@ function EditProjects () {
     console.log('edit component', currentProject);
     setProject(currentProject)
   }, [currentProject])
+
   return (
     <div className='col'>
-      {project ? 
-      <EditProjectForm project={project} /> : 
+      {project.name !== '' ? 
+      <EditProjectForm /> : 
       (<>Select a project!</>)}
     </div>
   )
