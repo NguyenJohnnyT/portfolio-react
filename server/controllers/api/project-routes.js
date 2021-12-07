@@ -15,4 +15,21 @@ router.get('/', async (req, res) => {
   }
 })
 
+//update project data
+router.put('/:id', async (req, res) => {
+  try {
+    const response = await Project.update(req.body, {
+      where: {
+        id: req.params.id
+      }
+    });
+
+    if (response) {
+      res.status(200).json({response, message: "Project edited!"})
+    }
+  } catch (err) {
+    res.status(500).json(err)
+  }
+})
+
 module.exports = router;

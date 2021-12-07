@@ -8,6 +8,19 @@ export const getProjects = async () => {
   return data
 };
 
+export const editProjects = async (projectData, id) => {
+  let response = await fetch(`/api/projects/${id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(projectData)
+  })
+  if (response.ok) {
+    return true
+  } else return false
+}
+
 export const createProjects = async () => {
   return
 }
