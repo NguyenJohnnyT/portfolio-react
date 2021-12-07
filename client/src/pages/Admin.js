@@ -4,6 +4,8 @@ import ListProjects from "../components/Admin/ListProjects/ListProjects";
 import AdminForm from "../components/Admin/AdminForm/AdminForm";
 import { getProjects } from "../utils/API";
 import Auth from "../utils/auth";
+import EditProjects from "../components/Admin/EditProjects/EditProjects";
+import ProjectProvider from "../utils/ProjectContext";
 
 const Admin = () => {
   const [ project, setProject ] = useState([]);
@@ -36,7 +38,10 @@ const Admin = () => {
     ? ( 
        <>
           <div className='row'>
-            <ListProjects className='col' projectList={project} />
+            <ProjectProvider>
+              <ListProjects projectList={project} />
+              <EditProjects />
+            </ProjectProvider>
           </div>
           <div className='row adminForm'>
             <AdminForm className='col'/>
