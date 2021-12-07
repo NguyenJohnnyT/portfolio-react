@@ -7,14 +7,13 @@ function EditProjects () {
   const [ project, setProject ] = useState({});
 
   useEffect(() => {
-    console.log('edit component', currentProject);
     setProject(currentProject)
   }, [currentProject])
 
   return (
     <div className='col'>
       {project.name !== '' ? 
-      <EditProjectForm /> : 
+      <EditProjectForm id={project.id} /> : 
       (<>Select a project!</>)}
     </div>
   )

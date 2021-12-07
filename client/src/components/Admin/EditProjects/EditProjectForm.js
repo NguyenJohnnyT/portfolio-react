@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useProjectContext } from '../../../utils/ProjectContext'
 import './style.css'
+import { editProject } from "../../../utils/API"
 
-export const EditProjectForm = () => {
+export const EditProjectForm = ({ id }) => {
   const { currentProject } = useProjectContext();
   const [projectForm, setProjectForm] = useState(
     {
@@ -16,16 +17,22 @@ export const EditProjectForm = () => {
   )
 
   useEffect(() => {
-    console.log('editform change', currentProject)
-    setProjectForm({...currentProject})
+    setProjectForm({...currentProject});
   }, [currentProject])
 
+  const editProjectHandler = async (e) => {
+    e.preventDefault();
+    const response = await editProject(projectForm, id);
+    if (response) {
+      document.location.reload()
+    } else alert('Error updating database!')
+  }
   return (
     <>
       <label className='row editName'>
         Project name:
         <input
-          onChange={(e) => setProjectForm(e.target.value)}
+          onChange={(e) => setProjectForm({...projectForm, name: e.target.value})}
           type='text'
           value={projectForm.name}
         />
@@ -33,7 +40,7 @@ export const EditProjectForm = () => {
       <label className='row editDesc'>
         Description:
         <input
-          onChange={(e) => setProjectForm(e.target.value)}
+          onChange={(e) => setProjectForm({...projectForm, name: e.target.value})}
           type='text'
           value={projectForm.description}
         />
@@ -41,7 +48,7 @@ export const EditProjectForm = () => {
       <label className='row link'>
         GitHub link:
         <input
-          onChange={(e) => setProjectForm(e.target.value)}
+          onChange={(e) => setProjectForm({...projectForm, name: e.target.value})}
           type='text'
           value={projectForm.gitHub}
         />
@@ -49,7 +56,7 @@ export const EditProjectForm = () => {
       <label className='row link'>
         Deploy link:
         <input
-          onChange={(e) => setProjectForm(e.target.value)}
+          onChange={(e) => setProjectForm({...projectForm, name: e.target.value})}
           type='text'
           value={projectForm.deploy}
         />
@@ -57,7 +64,7 @@ export const EditProjectForm = () => {
       <label className='row link'>
         Picture Url (use imgur):
         <input
-          onChange={(e) => setProjectForm(e.target.value)}
+          onChange={(e) => setProjectForm({...projectForm, name: e.target.value})}
           type='text'
           value={projectForm.pictures}
         />
@@ -70,6 +77,16 @@ export const EditProjectForm = () => {
           value={projectForm.date}
         />
       </label> */}
+      {id ? 
+      <button onClick={editProjectHandler} disabled={false}>
+        Submit Changes
+      </button> 
+      : 
+      <button onClick={editProjectHandler} disabled={true}>
+        Submit Changes
+      </button>
+      }
+      
     </>
   )
 }

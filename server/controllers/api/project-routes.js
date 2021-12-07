@@ -18,7 +18,13 @@ router.get('/', async (req, res) => {
 //update project data
 router.put('/:id', async (req, res) => {
   try {
-    const response = await Project.update(req.body, {
+    const response = await Project.update({
+      name: req.body.name,
+      description: req.body.description,
+      gitHub: req.body.gitHub,
+      deploy: req.body.deploy,
+      pictures: req.body.pictures
+    }, {
       where: {
         id: req.params.id
       }
