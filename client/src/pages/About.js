@@ -10,17 +10,19 @@ function About () {
         <img src={me} className='pfp' alt="johnny"/>
       </div>
       <div className='col-8 about-text'>
-        <p>Based in Santa Clara, California, I am a full-stack engineer with practice in various languages including HTML, CSS, JavaScript, and Python.  I graduated from the UC Berkeley Extension web development bootcamp hosted by Trilogy Education in September 2021. I am now working part time there as a teaching assistant for the Winter/Spring cohort in 2022. I love to teach, build, and collaborate on small and big projects so I hope to find like-minded individuals, colleagues, and students there. Still, alongside this fulfilling teaching position, I currently am looking for a <code className='about-code'>full time position in software development</code> as the main career goal. I am available for conversation through LinkedIn, my email <code className='about-code'>johnnytrucnguyen@gmail.com</code>, and by phone <code className='about-code'>408-641-5559</code>.</p>
+        <h3>Current Position:</h3>
+        <p>I am currently a front-end engineer for <a className='noLink' href="https://www.kernel.com">Kernel</a> and also a part time teaching assistant for <a className='noLink' href="https://bootcamp.berkeley.edu/coding/">UC Berkeley Extension Coding Boot Camp</a>.</p>  
         <br/>
-        <p>This portfolio was built with React and utilizes a MySQL database that allows an authenticated administrator to add and remove projects and skills into the portfolio database. Currently, only the administrator (me) can login to the website<sup><i>as long as my username and password has not been leaked!</i></sup>. Future features include allowing logged in users or guests to personally send me messages via a message board. Logged in users have sessions utilized by jsonwebtokens and have secured hashed and salted passwords. </p>
+        <h3>My Story:</h3>
+        <p>I was born in the Bay Area where my journey took me through several career prospects--I graduated at San Jose State University with a chemistry degree before moving on to pharmacy school in Albany, NY. I graduated and became a licensed pharmacist in Nevada and Oregon. While I enjoyed interacting and helping patients through my internships, I felt a strong passion to build something in tech. Perhaps it was my roots in Silicon Valley calling me? In 2021, I dabbled in coding and eventually entered a program at UC Berkeley Extension Boot Camp for Web Development. I graduated and continue to build projects that inspire me. I love to teach others and entertain!</p>
+        <p>My current hobbies include rock climbing, working out, playing piano, watching Twitch streams (mostly Dota2 and Starcraft), and leaving Hololive in the background while I work. I love listening to music and would love new suggestions!</p>
         <br/>
-        <p>The Projects page is populated from what is stored in the <code className='about-code'>johnny-portfolio</code> database with screenshots provided through Imgur. For a look into the actual code and packages used, please visit 
-          <a className='noLink' href="https://github.com/NguyenJohnnyT/portfolio-react"> the portfolio repo</a>
-        .
-        </p>
+        <h3>Contact me:</h3>
+        <p>I am available for conversation through <a className='noLink' href="https://www.linkedin.com/in/johnny-truc-nguyen">LinkedIn</a>
+        , my email <code className='about-code'>johnnytrucnguyen@gmail.com</code> and by phone <code className='about-code'>408-641-5559</code>. This portfolio repo is hosted at <a className='noLink' href="https://github.com/NguyenJohnnyT/portfolio-react">GitHub</a>.</p> 
         <br/>
+        <h3>My Skills and Technologies:</h3>
         <p>
-          Lastly, an ever growing list of skills and tech I've covered inside and outside of UC Berkeley Bootcamp:
           <ul>
             <li><strong className="strongTitle">Proficient Languages: </strong> HTML, CSS, JavaScript, Python, SQL</li>
             <li><strong className="strongTitle">Technologies and applications: </strong> Bootstrap, jQuery, Git, Insomnia, indexDB, MongoDB, MySQL, Node.js, Express.js, Handlebars, Express-sessions, JSON Web Tokens, React, ReactHooks, GraphQL, Heroku, Insomnia</li>
@@ -28,7 +30,7 @@ function About () {
             <li><strong className="strongTitle">Packages that I have worked with:  </strong> HowlerJS, node-cron, node-fetch, bcrypt, Sequelize, Mongoose, Morgan, react-phys-color, discord-py, discord-py-slash-command, dotenv</li>
           </ul>
         </p>
-        <p><sup>This page was last updated 11/23/2021</sup></p>
+        <p><sup>This page was last updated 1/28/2022</sup></p>
       </div>
     </div>
   )
