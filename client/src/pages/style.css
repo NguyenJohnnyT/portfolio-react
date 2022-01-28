@@ -62,7 +62,7 @@ body {
 .nav {
     background: #ECEFF1;
     top: 0px;
-    height: 4vh;
+    height: 5%;
     position:sticky;
     display: flex;
     flex-direction: row;
@@ -72,7 +72,9 @@ body {
 }
 
 .nav-link {
-    height: 4vh;
+    display: flex;
+    align-items: center;
+    height:4vh;
 }
 
 .nav-link:hover {
