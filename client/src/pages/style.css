@@ -23,7 +23,7 @@ body {
 .fillPage {
     margin-right: 0;
     background-color: #ECEFF1;
-    height: 89vh
+    height: 96vh
 }
 
 .form {
@@ -57,6 +57,17 @@ body {
     height: 300px;
     width: 100%;
     max-width:500px;
+}
+
+.nav {
+    background: #ECEFF1;
+    top: 0px;
+    height: 4vh;
+    position:sticky
+}
+
+.nav-link {
+    height: 4vh;
 }
 
 .nav-icon {
