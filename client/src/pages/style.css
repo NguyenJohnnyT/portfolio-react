@@ -63,11 +63,20 @@ body {
     background: #ECEFF1;
     top: 0px;
     height: 4vh;
-    position:sticky
+    position:sticky;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    padding-bottom: 2px;
 }
 
 .nav-link {
     height: 4vh;
+}
+
+.nav-link:hover {
+    background-color: #e0e2e4;
 }
 
 .nav-icon {
@@ -78,7 +87,8 @@ body {
 
 .nav-icon:hover {
     cursor: pointer;
-    animation: shake 1s;
+    animation: shake 3s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite
 }
 .noLink {
@@ -108,9 +118,10 @@ body {
 
 @keyframes shake {
     0% { transform: translate(0px, 1px) rotate(1deg); }
-    30% { transform: translate(0px, 0px) rotate(0deg); }
-    70% { transform: translate(0px, -1px) rotate(-1deg); }
-    90% { transform: translate(0px, 0px) rotate(0deg); }
+    25% { transform: translate(0px, 0px) rotate(90deg); }
+    50% { transform: translate(0px, -1px) rotate(180deg); }
+    75% { transform: translate(0px, 0px) rotate(270deg); }
+    100% { transform: translate(0px, 1px) rotate(360deg)}
 }
 
 @media only screen and (max-width:1000px), (max-height: 810px)  {
