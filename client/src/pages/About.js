@@ -11,7 +11,7 @@ function About () {
       </div>
       <div className='col-8 about-text'>
         <h3>Current Position:</h3>
-        <p>I am formerly a front-end engineer for <a className='noLink' href="https://www.kernel.com">Kernel</a> and currently a part time teaching assistant for <a className='noLink' href="https://bootcamp.berkeley.edu/coding/">UC Berkeley Extension Coding Boot Camp</a>.</p>  
+        <p>I am formerly a front-end engineer for <a className='noLink' href="https://www.kernel.com">Kernel</a> and currently a part time teaching assistant for <a className='noLink' href="https://bootcamp.berkeley.edu/coding/">UC Berkeley Extension Coding Boot Camp</a>. Open for new opportunities as a front-end/UI/UX developer!</p>  
         <br/>
         <h3>My Story:</h3>
         <p>I was born in the Bay Area where my journey took me through several career prospects--I graduated at San Jose State University with a chemistry degree before moving on to pharmacy school in Albany, NY. I graduated and became a licensed pharmacist in Nevada and Oregon. While I enjoyed interacting and helping patients through my internships, I felt a strong passion to build something in tech. Perhaps it was my roots in Silicon Valley calling me? In 2021, I dabbled in coding and eventually entered a program at UC Berkeley Extension Boot Camp for Web Development. I graduated and continue to build projects that inspire me. I love to teach others and entertain!</p>
