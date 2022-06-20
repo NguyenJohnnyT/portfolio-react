@@ -1,7 +1,7 @@
 export const unsplashAPI = async () => {
 
-  if (!process.env.REACT_APP_UNSPLASH_API_KEY) {
-    console.error("WHERE IS THE API KEY?!");
+  if (!process.env.REACT_APP_UNSPLASH_API_KEY || process.env.NODE_ENV !== "production") {
+    console.error("Development build only: NO UNSPLASH API KEY || NOT PROD!");
     return [];
   };
 
